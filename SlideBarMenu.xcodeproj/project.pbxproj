@@ -12,6 +12,8 @@
 		7813EA17216F47A900F31B2A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7813EA15216F47A900F31B2A /* Main.storyboard */; };
 		7813EA19216F47AA00F31B2A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7813EA18216F47AA00F31B2A /* Assets.xcassets */; };
 		7813EA1C216F47AA00F31B2A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7813EA1A216F47AA00F31B2A /* LaunchScreen.storyboard */; };
+		7813EA24216F548000F31B2A /* SlideBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7813EA23216F548000F31B2A /* SlideBarViewController.swift */; };
+		9A72EAE757A59BCD6EB0FCF1 /* Pods_SlideBarMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94D2FB4DD6A002E90CC324FC /* Pods_SlideBarMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		7813EA18216F47AA00F31B2A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7813EA1B216F47AA00F31B2A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7813EA1D216F47AB00F31B2A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7813EA23216F548000F31B2A /* SlideBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideBarViewController.swift; sourceTree = "<group>"; };
+		94D2FB4DD6A002E90CC324FC /* Pods_SlideBarMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SlideBarMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA4452BF7D867D3B66BC2225 /* Pods-SlideBarMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideBarMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SlideBarMenu/Pods-SlideBarMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		BAC6C3AB6BCDCDA0CE9E23D1 /* Pods-SlideBarMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SlideBarMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-SlideBarMenu/Pods-SlideBarMenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A72EAE757A59BCD6EB0FCF1 /* Pods_SlideBarMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58F38EB59F40B8FE938E7D52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				94D2FB4DD6A002E90CC324FC /* Pods_SlideBarMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7813EA05216F47A800F31B2A = {
 			isa = PBXGroup;
 			children = (
 				7813EA10216F47A900F31B2A /* SlideBarMenu */,
 				7813EA0F216F47A900F31B2A /* Products */,
+				BD3422EA0F3C4A85FD6E21A0 /* Pods */,
+				58F38EB59F40B8FE938E7D52 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,22 @@
 			children = (
 				7813EA11216F47A900F31B2A /* AppDelegate.swift */,
 				7813EA13216F47A900F31B2A /* ViewController.swift */,
+				7813EA23216F548000F31B2A /* SlideBarViewController.swift */,
 				7813EA15216F47A900F31B2A /* Main.storyboard */,
 				7813EA18216F47AA00F31B2A /* Assets.xcassets */,
 				7813EA1A216F47AA00F31B2A /* LaunchScreen.storyboard */,
 				7813EA1D216F47AB00F31B2A /* Info.plist */,
 			);
 			path = SlideBarMenu;
+			sourceTree = "<group>";
+		};
+		BD3422EA0F3C4A85FD6E21A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA4452BF7D867D3B66BC2225 /* Pods-SlideBarMenu.debug.xcconfig */,
+				BAC6C3AB6BCDCDA0CE9E23D1 /* Pods-SlideBarMenu.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7813EA20216F47AB00F31B2A /* Build configuration list for PBXNativeTarget "SlideBarMenu" */;
 			buildPhases = (
+				062DCFDD4D4CD454F64F99CD /* [CP] Check Pods Manifest.lock */,
 				7813EA0A216F47A900F31B2A /* Sources */,
 				7813EA0B216F47A900F31B2A /* Frameworks */,
 				7813EA0C216F47A900F31B2A /* Resources */,
+				3F71499F0DABC47F0C67596E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,12 +159,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		062DCFDD4D4CD454F64F99CD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SlideBarMenu-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F71499F0DABC47F0C67596E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SlideBarMenu/Pods-SlideBarMenu-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SWRevealViewController/SWRevealViewController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWRevealViewController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SlideBarMenu/Pods-SlideBarMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7813EA0A216F47A900F31B2A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				7813EA14216F47A900F31B2A /* ViewController.swift in Sources */,
+				7813EA24216F548000F31B2A /* SlideBarViewController.swift in Sources */,
 				7813EA12216F47A900F31B2A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +349,7 @@
 		};
 		7813EA21216F47AB00F31B2A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4452BF7D867D3B66BC2225 /* Pods-SlideBarMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +368,7 @@
 		};
 		7813EA22216F47AB00F31B2A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAC6C3AB6BCDCDA0CE9E23D1 /* Pods-SlideBarMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

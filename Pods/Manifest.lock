@@ -1,0 +1,22 @@
+PODS:
+  - SWRevealViewController (2.4.0)
+
+DEPENDENCIES:
+  - SWRevealViewController (from `https://github.com/John-Lluch/SWRevealViewController.git`, tag `v2.4.0`)
+
+EXTERNAL SOURCES:
+  SWRevealViewController:
+    :git: https://github.com/John-Lluch/SWRevealViewController.git
+    :tag: v2.4.0
+
+CHECKOUT OPTIONS:
+  SWRevealViewController:
+    :git: https://github.com/John-Lluch/SWRevealViewController.git
+    :tag: v2.4.0
+
+SPEC CHECKSUMS:
+  SWRevealViewController: b653f339865208c97be99a24876545f5be0cc4bb
+
+PODFILE CHECKSUM: 3afed98628444990f97952a9c3b2f66c94aeb190
+
+COCOAPODS: 1.5.3
